@@ -11,34 +11,34 @@ Es un proyecto tanto de back como de front, para validar los conceptos tecnicos 
 
 ### Como instalarlo
 * Instrucciones de instalacion
-Realizar la clonacion del proyecto
-Abrir intellijIDEA y seleccionar el proyecto
+Realizar la clonacion del proyecto con el comando git clone https://github.com/jairoAndresAuto/retoFrontopencart.git <br>
+Abrir intellij IDEA y abrir el proyecto
 
 ### Ejecución de pruebas
 
 To run a specific Tag<br>
-`gradle clean test -Dcucumber.filter.tags=@SISTEMA` <br>
-`gradle clean test -Dcucumber.filter.tags=@BACKEND`
+`gradle clean test -Dcucumber.filter.tags=@SISTEMA`
+
+### Ejecución de pruebas con POM
+in a la siguiente rura [src/test/java/co/com/practica/opencart/test]() - Clases para ejecutar test de POM <br>
+`./gradlew clean test --tests ProcesoCompra`
 
 ### Descripcion de las pruebas automatizadas
 
-Los escenarios de back son los de crear booking, obtener booking y actualizar booking, cada uno de los escenarios tiene el happy paths como el Unhappy paths. tambien tiene una data variable que es generada con data faker.
+Los escenarios de front son los Registrar usuario, login, resetear contraseña y compra de articulo. tambien tiene una data variable que es generada con data faker.
 
-Los escenarios de front son los de realizar compras en linea, algunos de los datos son generados aleatoriamente, adicionalmente cuanta con un ordenamiento tanto descendentemente como ascendentemente y se escribe cada ejecucion el ordenamiento de los datos sin borrar los anteriores dandole persistencia a los datos. Si el archivo no esta creado se creara en tiempo de ejecucion
 
 ### Estructura del Proyecto:
 
-[src/main/java/co/com/sura/acelerador/interactions]() - Tanto back como front <br>
-[src/main/java/co/com/sura/acelerador/questions]() - Aserciones de las pruebas. <br>
-[src/main/java/co/com/sura/acelerador/task]() - que ejecutan las tareas de las pruebas. <br>
-[src/main/java/co/com/sura/acelerador/userinterfaces]() - Donde se mapean cada uno de los elementos de la automatización por funcionalidad <br>
-[src/main/java/co/com/sura/acelerador/util]() - Clase de utilidades genericas del proyecto <br>
+[src/main/java/co/com/practica/opencart/interactions]() - consumo de los servicios de back <br>
+[src/main/java/co/com/practica/opencart/questions]() - Aserciones de las pruebas. <br>
+[src/main/java/co/com/practica/opencart/task]() - que ejecutan las tareas de las pruebas. <br>
+[src/main/java/co/com/practica/opencart/userinterfaces]() - que es donde se almacenan los mapeos. <br>
+[src/main/java/co/com/practica/opencart/util]() - Clase de utilidades genericas del proyecto <br>
 
-[src/test/java/co/com/sura/acelerador/runners]() - Clases para ejecutar los test <br>
-[src/test/java/co/com/sura/acelerador/stepdefinitions]() - Son la traducción de los features a código <br>
+[src/test/java/co/com/practica/opencart/runners]() - Clases para ejecutar los test <br>
+[src/test/java/co/com/practica/opencart/stepdefinitions]() - Son la traducción de los features a código <br>
 [src/test/resources/features]() - Historias de usuario que se llevarán a cabo en las pruebas <br>
-[src/test/resources/booking/dato.txt]() - Donde es escribe el id booking cada ejecucion <br>
-[src/test/resources/datos/datos.txt]() - Donde se escriben los ordenamientos de los precios tanto descendentemente como ascendentemente <br>
 
 ### Generación de Reportes:
 
