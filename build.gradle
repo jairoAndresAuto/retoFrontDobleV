@@ -76,7 +76,6 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
-            "org.junit.jupiter:junit-jupiter-engine:${junitVersion}",
             "org.junit.vintage:junit-vintage-engine:${junitVintageVersion}"
 
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-devtools-v114', version: "$seleniumDevToolsVersion"

@@ -10,7 +10,7 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.practica.opencart.userinterfaces.RegistroUI.BTN_CONTINUE;
 import static co.com.practica.opencart.userinterfaces.RegistroUI.TXT_EMAIL;
-import static co.com.practica.opencart.userinterfaces.ResetearClaveUI.BTN_OLVIDO_CONTRASEÑA;
+
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 @AllArgsConstructor
