@@ -13,4 +13,10 @@ Característica: validar inicio de sesion
     Cuando Se procede a ingresar las credenciales
       | user            | contrasena |
       | jairo@gmail.com | 1234       |
-    Y va la sesion de
+    Y Realiza el ingreso a Laptops & Notebooks
+    Y agrega el que se llama "MacBook Pro"
+    Y Luego realiza la busqueda de un tablet "Samsung Galaxy"
+    E ingresa al carrito y elimina el MacBook Pro
+    Y le agrega una unidad mas a la tablet
+    Y luego realiza todo el proceso de compra
+    Entonces vera el mensaje de exito de la compra
