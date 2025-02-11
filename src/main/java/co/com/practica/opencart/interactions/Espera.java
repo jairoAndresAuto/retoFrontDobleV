@@ -1,4 +1,4 @@
-package co.com.practica.opencart;
+package co.com.practica.opencart.interactions;
 
 import lombok.AllArgsConstructor;
 import net.serenitybdd.model.time.InternalSystemClock;

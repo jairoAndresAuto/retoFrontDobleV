@@ -80,7 +80,7 @@ dependencies {
             "org.junit.vintage:junit-vintage-engine:${junitVintageVersion}"
 
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-devtools-v114', version: "$seleniumDevToolsVersion"
-
+    implementation 'io.github.bonigarcia:webdrivermanager:+'
     testCompileOnly 'junit:junit:4.13.1'
 }
 

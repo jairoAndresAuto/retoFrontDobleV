@@ -25,5 +25,32 @@ public class ComprasUI {
             .located(By.xpath("//button[@data-original-title='Update']"));
     public static final Target BTN_CHECKOUT = Target.the("boton cuenta")
             .located(By.xpath("(//a[contains(.,'Check')])[3]"));
+    public static final Target TXT_NOMBRE = Target.the("boton cuenta")
+            .located(By.id("input-payment-firstname"));
+    public static final Target TXT_APELLIDO = Target.the("boton cuenta")
+            .located(By.id("input-payment-lastname"));
+    public static final Target TXT_DIRECCION = Target.the("boton cuenta")
+            .located(By.id("input-payment-address-1"));
+    public static final Target TXT_CIUDAD = Target.the("boton cuenta")
+            .located(By.id("input-payment-city"));
+    public static final Target TXT_CODIGO_POSTAL = Target.the("boton cuenta")
+            .located(By.id("input-payment-postcode"));
+    public static final Target SLC_PAIS = Target.the("boton cuenta")
+            .located(By.id("input-payment-country"));
+    public static final Target SLC_ZONA = Target.the("boton cuenta")
+            .located(By.id("input-payment-zone"));
+    public static final Target BTN_CONFIRMAR_PEDIDO = Target.the("boton cuenta")
+            .located(By.id("button-confirm"));
+    public static final Target LBL_MENSAJE_EXITOSO_COMPRA = Target.the("boton cuenta")
+            .located(By.xpath("//div[@id='content']//h1"));
+    public static final Target BTN_CONTINUE_ADDRESS = Target.the("boton cuenta")
+            .located(By.id("button-payment-address"));
+    public static final Target BTN_CONTINUE_SHOPPING_ADDRESS = Target.the("boton cuenta")
+            .located(By.id("button-shipping-address"));
+    public static final Target BTN_CONTINUE_SHOPPING_METODO = Target.the("boton cuenta")
+            .located(By.id("button-shipping-method"));
+    public static final Target BTN_METODO_PAGO = Target.the("boton cuenta")
+            .located(By.id("button-payment-method"));
+
 
 }
