@@ -50,5 +50,5 @@ target/site/serenity/index.html - este es el archivo que se debe abrir para revi
 
 ### Contribución y Contacto:
 
-[jairo.garcia@sofka.com.co](mailto:jairo.garcia@sofka.com.co)
+[jairo_garcia82122@elpoli.edu.co](mailto:jairo_garcia82122@elpoli.edu.co)
 
