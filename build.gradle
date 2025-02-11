@@ -94,6 +94,9 @@ test {
         case "@SISTEMA":
             useJUnit()
             include('**/AgregarProductosRunner.class*')
+            include('**/InicioSesionRunner.class*')
+            include('**/ReestablecerContrasenaRunner.class*')
+            include('**/RegistroRunner.class*')
             maxParallelForks = 1
             break
     }
